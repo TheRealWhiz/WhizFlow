@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Company></Company>
+    <Authors></Authors>
+    <Description>WhizFlow Project</Description>
+    <Copyright></Copyright>
+    <PackageTags></PackageTags>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="packages\**" />
+    <EmbeddedResource Remove="packages\**" />
+    <None Remove="packages\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WF.Common.Objects.WFTask" Version="1.0.1" />
+    <PackageReference Include="WF.DAL" Version="1.0.1" />
+    <PackageReference Include="WF.ScheduleManagement" Version="1.0.1" />
+    <PackageReference Include="WF.TasksManagement" Version="1.0.1" />
+    <PackageReference Include="WF.TasksManagement.Objects" Version="1.0.1" />
+    <PackageReference Include="WF.WorkerManagement" Version="1.0.2" />
+    <PackageReference Include="Whiz.Framework.Configuration" Version="1.0.1" />
+    <PackageReference Include="Whiz.Framework.Configuration.Xml" Version="1.0.1" />
+  </ItemGroup>
+
+</Project>

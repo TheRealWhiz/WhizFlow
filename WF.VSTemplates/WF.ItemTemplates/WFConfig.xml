@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+	<!--Database connection strings for main logs-->
+	<db></db>
+	<!--Http listener configuration-->
+	<http>http://*:50000/</http>
+	<!--Domains configurations-->
+	<!--<domains>
+		--><!--Repeat the domain configuration as many time as you want specifying different names--><!--
+		<domain name="domain1">
+			--><!--Domain connection string--><!--
+			<db></db>
+			--><!--Content to disk abilitation.
+			The TaskContent data will be written on disk at the specified path when the size is equal or greater than the threshold specified in bytes--><!--
+			<contentToDisk>
+				<enable></enable>
+				<threshold></threshold>
+				<path></path>
+			</contentToDisk>
+			--><!--Domain queues--><!--
+			<queues>
+				--><!--
+				Specify as many queue as you want with different names
+				frequency specify how frequently (in ms) the queue should be checked for new tasks
+				repeatcycle specify if the queue should be checked immediately after the processing of the retrieved message without waiting for frequency
+				numberoftasks specify how many tasks will be taken in memory by the service each time
+				dedicated specify that the queue will have its own structure in the database
+				<queue frequency="100" repeatcycle="true" numberoftasks="100" name="queue" dedicated="1">
+					<plugins>
+						<plugin>
+							<configuration>
+							this content will be included in the Generic Configuration passed to your plugin
+							</configuration>
+							<assembly>your assembly full path</assembly>
+							<class>YourNamespace.YourManagerClass</class>
+							<modulename>your logical module name</modulename>
+						</plugin>
+					</plugins>
+				</queue>
+				--><!--
+			</queues>
+			--><!--Domain schedulers--><!--
+			<schedulers>
+				--><!--
+				Specify as many scheduler as you want with different names
+				startdate specify the start of the first time event
+				timespan if present specify if the event must be repeated
+				<scheduler startdate="yyyy/mm/dd hh:mm:ss" timespan="hh:mm:ss" name="scheduler">
+					<plugins>
+						<plugin>
+							<configuration>
+							this content will be included in the Generic Configuration passed to your plugin
+							</configuration>
+							<assembly>your assembly full path</assembly>
+							<class>YourNamespace.YourSchedulerClass</class>
+							<modulename>your logical module name</modulename>
+						</plugin>
+					</plugins>
+				</scheduler>
+				--><!--
+			</schedulers>-->
+			<!--Domain workers--><!--
+			<workers>
+				--><!--
+				Specify as many worker as you want with different names
+				each plugin worker will run in a separate thread
+				<worker name="name">
+					<plugins>
+						<plugin>
+							<configuration>
+							this content will be included in the Generic Configuration passed to your plugin
+							</configuration>
+							<assembly>your assembly full path</assembly>
+							<class>YourNamespace.YourWorkerClass</class>
+							<modulename>your logical module name</modulename>
+						</plugin>
+					</plugins>
+				</worker>
+				--><!--
+			</workers>-->
+			<!--Domain http activations-->
+			<!--<commands>
+				<command name="command-name">
+					<configuration>
+					this content will be included in the Generic Configuration passed to your plugin
+					</configuration>
+					<assembly>your assembly full path</assembly>
+					<class>YourNamespace.YourSchedulerClass</class>
+					<method>your static method that will handle the http call</method>
+				</command>
+			</commands>-->
+			<!--<environment>
+				in this section you create the environment variables for your machine
+			</environment>
+		</domain>
+	</domains>-->
+</config>
+

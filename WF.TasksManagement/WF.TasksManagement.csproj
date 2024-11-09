@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net461;net471;net472;net48</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Company>Whiz</Company>
+    <Authors>Gabriele Vaccaro</Authors>
+    <Description>WhizFlow TaskManagement classes</Description>
+    <Copyright>Whiz</Copyright>
+    <PackageTags></PackageTags>
+    <Version>1.0.1</Version>
+    <DocumentationFile>bin\$(TargetConfiguration)\$(TargetFrameworkVersion)\WF.TasksManagement.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Whiz.Framework.Configuration" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WF.Common.Objects.WFTask\WF.Common.Objects.WFTask.csproj" />
+    <ProjectReference Include="..\WF.DAL\WF.DAL.csproj" />
+    <ProjectReference Include="..\WF.TasksManagement.Objects\WF.TasksManagement.Objects.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Runtime.Caching" />
+  </ItemGroup>
+
+</Project>

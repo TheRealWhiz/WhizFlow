@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net461;net471;net472;net48</TargetFrameworks>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Company>Whiz</Company>
+    <Authors>Gabriele Vaccaro</Authors>
+    <Description>WhizFlow Engine Monitoring Performance Counters classes</Description>
+    <Copyright>Whiz</Copyright>
+    <PackageTags></PackageTags>
+    <Version>1.0.1</Version>
+    <DocumentationFile>bin\$(TargetConfiguration)\$(TargetFrameworkVersion)\WF.Engine.Monitoring.PerformanceCounters.xml</DocumentationFile>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net48</TargetFrameworks>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Company>Whiz</Company>
+    <Authors>Gabriele Vaccaro</Authors>
+    <Description>WhizFlow Service Simulator</Description>
+    <Copyright>Whiz</Copyright>
+    <PackageTags></PackageTags>
+    <Version>1.0.1</Version>
+    <OutputType>WinExe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Whiz.Framework.Configuration" Version="1.0.1" />
+    <PackageReference Include="Whiz.Framework.Configuration.Xml" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WF.Engine\WF.Engine.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+</Project>

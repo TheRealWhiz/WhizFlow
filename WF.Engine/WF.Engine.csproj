@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net461;net471;net472;net48</TargetFrameworks>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Company>Whiz</Company>
+    <Authors>Gabriele Vaccaro</Authors>
+    <Description>WhizFlow Engine</Description>
+    <Copyright>Whiz</Copyright>
+    <PackageTags></PackageTags>
+    <Version>1.0.3</Version>
+    <DocumentationFile>bin\$(TargetConfiguration)\$(TargetFrameworkVersion)\WF.Engine.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Whiz.Framework.Configuration" Version="1.0.1" />
+    <PackageReference Include="Whiz.Framework.Configuration.Xml" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WF.Common.Objects.WFTask\WF.Common.Objects.WFTask.csproj" />
+    <ProjectReference Include="..\WF.DAL\WF.DAL.csproj" />
+    <ProjectReference Include="..\WF.Engine.Monitoring.Events\WF.Engine.Monitoring.Events.csproj" />
+    <ProjectReference Include="..\WF.Engine.Monitoring.PerformanceCounters\WF.Engine.Monitoring.PerformanceCounters.csproj" />
+    <ProjectReference Include="..\WF.Engine.Monitoring.Utilities.BE\WF.Engine.Monitoring.Utilities.BE.csproj" />
+    <ProjectReference Include="..\WF.Engine.Monitoring.Utilities\WF.Engine.Monitoring.Utilities.csproj" />
+    <ProjectReference Include="..\WF.Engine.Monitoring\WF.Engine.Monitoring.csproj" />
+    <ProjectReference Include="..\WF.ScheduleManagement\WF.ScheduleManagement.csproj" />
+    <ProjectReference Include="..\WF.TasksManagement.Objects\WF.TasksManagement.Objects.csproj" />
+    <ProjectReference Include="..\WF.TasksManagement\WF.TasksManagement.csproj" />
+    <ProjectReference Include="..\WF.WorkerManagement\WF.WorkerManagement.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Management" />
+  </ItemGroup>
+</Project>

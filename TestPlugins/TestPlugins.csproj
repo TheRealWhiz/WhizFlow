@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net48</TargetFrameworks>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Company>Whiz</Company>
+    <Authors>Gabriele Vaccaro</Authors>
+    <Description>Test plugin</Description>
+    <Copyright>Whiz</Copyright>
+    <PackageTags></PackageTags>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Whiz.Framework.Configuration" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WF.Common.Objects.WFTask\WF.Common.Objects.WFTask.csproj" />
+    <ProjectReference Include="..\WF.DAL\WF.DAL.csproj" />
+    <ProjectReference Include="..\WF.ScheduleManagement\WF.ScheduleManagement.csproj" />
+    <ProjectReference Include="..\WF.TasksManagement.Objects\WF.TasksManagement.Objects.csproj" />
+    <ProjectReference Include="..\WF.TasksManagement\WF.TasksManagement.csproj" />
+    <ProjectReference Include="..\WF.WorkerManagement\WF.WorkerManagement.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net461;net471;net472;net48</TargetFrameworks>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Company>Whiz</Company>
+		<Authors>Gabriele Vaccaro</Authors>
+		<Description>WhizFlow Monitoring Application plugin</Description>
+		<Copyright>Whiz</Copyright>
+		<PackageTags></PackageTags>
+		<Version>1.0.1</Version>
+		<DocumentationFile>bin\$(TargetConfiguration)\$(TargetFrameworkVersion)\WF.Monitoring.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Whiz.Monitoring.Application.Common" Version="1.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\WF.Common.Objects.WFTask\WF.Common.Objects.WFTask.csproj" />
+	  <ProjectReference Include="..\WF.Engine.Monitoring.Utilities\WF.Engine.Monitoring.Utilities.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="System.Windows.Forms" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Workers.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	</ItemGroup>
+
+</Project>

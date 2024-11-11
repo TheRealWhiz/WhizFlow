@@ -632,6 +632,18 @@ namespace Whiz.WhizFlow.Monitoring
 			XDocument x = XDocument.Parse(HttpUtilities.HttpCall(whizFlow + "/domainscheduler/restorerecurrence?domain=" + domain + "&scheduler=" + scheduler, false));
 			return true;
 		}
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="whizFlow"></param>
+		/// <param name="domain"></param>
+		/// <param name="entries"></param>
+		/// <param name="module"></param>
+		/// <param name="type"></param>
+		/// <param name="allHosts"></param>
+		/// <param name="allServices"></param>
+		/// <param name="allDomains"></param>
+		/// <returns></returns>
 		public static List<LogEntry> LogsGet1(String whizFlow, String domain, Int32 entries, Modules module, LogTypes type, Boolean allHosts, Boolean allServices, Boolean allDomains)
 		{
 			List<LogEntry> result = new List<LogEntry>();
@@ -648,6 +660,19 @@ namespace Whiz.WhizFlow.Monitoring
 			}
 			return result;
 		}
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="whizFlow"></param>
+		/// <param name="domain"></param>
+		/// <param name="from"></param>
+		/// <param name="to"></param>
+		/// <param name="module"></param>
+		/// <param name="type"></param>
+		/// <param name="allHosts"></param>
+		/// <param name="allServices"></param>
+		/// <param name="allDomains"></param>
+		/// <returns></returns>
 		public static List<LogEntry> LogsGet2(String whizFlow, String domain, DateTime from, DateTime to, Modules module, LogTypes type, Boolean allHosts, Boolean allServices, Boolean allDomains)
 		{
 			List<LogEntry> result = new List<LogEntry>();
@@ -664,6 +689,18 @@ namespace Whiz.WhizFlow.Monitoring
 			}
 			return result;
 		}
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="whizFlow"></param>
+		/// <param name="domain"></param>
+		/// <param name="taskContentId"></param>
+		/// <param name="module"></param>
+		/// <param name="type"></param>
+		/// <param name="allHosts"></param>
+		/// <param name="allServices"></param>
+		/// <param name="allDomains"></param>
+		/// <returns></returns>
 		public static List<LogEntry> LogsGet3(String whizFlow, String domain, Int32 taskContentId, Modules module, LogTypes type, Boolean allHosts, Boolean allServices, Boolean allDomains)
 		{
 			List<LogEntry> result = new List<LogEntry>();
@@ -680,6 +717,13 @@ namespace Whiz.WhizFlow.Monitoring
 			}
 			return result;
 		}
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="whizFlow"></param>
+		/// <param name="domain"></param>
+		/// <param name="taskContentId"></param>
+		/// <returns></returns>
 		public static WhizFlowTaskContent TaskContentGet(String whizFlow, String domain, Int32 taskContentId)
 		{
 			WhizFlowTaskContent result = new WhizFlowTaskContent();
@@ -695,6 +739,13 @@ namespace Whiz.WhizFlow.Monitoring
 			result.Content = (Object)tempresult[2];
 			return result;
 		}
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="whizFlow"></param>
+		/// <param name="domain"></param>
+		/// <param name="taskContentId"></param>
+		/// <returns></returns>
 		public static List<TaskInformation> TaskInformationsGet(String whizFlow, String domain, Int32 taskContentId)
 		{
 			List<TaskInformation> result = new List<TaskInformation>();
@@ -711,6 +762,16 @@ namespace Whiz.WhizFlow.Monitoring
 			}
 			return result;
 		}
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="whizFlow"></param>
+		/// <param name="domain"></param>
+		/// <param name="entries"></param>
+		/// <param name="allHosts"></param>
+		/// <param name="allServices"></param>
+		/// <param name="allDomains"></param>
+		/// <returns></returns>
 		public static List<TaskInformation> TaskInformationsGetProcessed(String whizFlow, String domain, Int32 entries, Boolean allHosts, Boolean allServices, Boolean allDomains)
 		{
 			List<TaskInformation> result = new List<TaskInformation>();
@@ -727,6 +788,17 @@ namespace Whiz.WhizFlow.Monitoring
 			}
 			return result;
 		}
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="whizFlow"></param>
+		/// <param name="domain"></param>
+		/// <param name="queue"></param>
+		/// <param name="entries"></param>
+		/// <param name="allHosts"></param>
+		/// <param name="allServices"></param>
+		/// <param name="allDomains"></param>
+		/// <returns></returns>
 		public static List<TaskInformation> TaskInformationsGetProcessed(String whizFlow, String domain, String queue, Int32 entries, Boolean allHosts, Boolean allServices, Boolean allDomains)
 		{
 			List<TaskInformation> result = new List<TaskInformation>();
@@ -743,6 +815,17 @@ namespace Whiz.WhizFlow.Monitoring
 			}
 			return result;
 		}
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="whizFlow"></param>
+		/// <param name="domain"></param>
+		/// <param name="from"></param>
+		/// <param name="to"></param>
+		/// <param name="allHosts"></param>
+		/// <param name="allServices"></param>
+		/// <param name="allDomains"></param>
+		/// <returns></returns>
 		public static List<TaskInformation> TaskInformationsGetProcessed(String whizFlow, String domain, DateTime from, DateTime to, Boolean allHosts, Boolean allServices, Boolean allDomains)
 		{
 			List<TaskInformation> result = new List<TaskInformation>();
@@ -759,6 +842,18 @@ namespace Whiz.WhizFlow.Monitoring
 			}
 			return result;
 		}
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="whizFlow"></param>
+		/// <param name="domain"></param>
+		/// <param name="queue"></param>
+		/// <param name="from"></param>
+		/// <param name="to"></param>
+		/// <param name="allHosts"></param>
+		/// <param name="allServices"></param>
+		/// <param name="allDomains"></param>
+		/// <returns></returns>
 		public static List<TaskInformation> TaskInformationsGetProcessed(String whizFlow, String domain, String queue, DateTime from, DateTime to, Boolean allHosts, Boolean allServices, Boolean allDomains)
 		{
 			List<TaskInformation> result = new List<TaskInformation>();

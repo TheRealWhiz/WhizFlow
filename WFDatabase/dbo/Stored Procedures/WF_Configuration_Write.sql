@@ -8,7 +8,7 @@ AS
 BEGIN
 	SET NOCOUNT ON;
 
-	if (exists(select id from WF_Configurations where [Service] = @Service and Hostname = @Hostname and Domain = @Domain))
+	if (exists(select Id from WF_Configurations where [Service] = @Service and Hostname = @Hostname and Domain = @Domain))
 		begin
 			update [dbo].[WF_Configurations]
 			set

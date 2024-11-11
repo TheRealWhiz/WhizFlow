@@ -37,7 +37,7 @@
 			this.colQueue = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.colSignature = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.colProcessingTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.colFeedId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.colTaskId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.lblDomain = new System.Windows.Forms.Label();
 			this.lblServiceName = new System.Windows.Forms.Label();
 			this.lblQueue = new System.Windows.Forms.Label();
@@ -111,7 +111,7 @@
 			// 
 			// colFeedId
 			// 
-			this.colFeedId.Text = "Feed Id";
+			this.colTaskId.Text = "Task Id";
 			// 
 			// lblDomain
 			// 
@@ -173,7 +173,7 @@
 		private System.Windows.Forms.ColumnHeader colTaskContentId;
 		private System.Windows.Forms.ColumnHeader colService;
 		private System.Windows.Forms.ColumnHeader colDomain;
-		private System.Windows.Forms.ColumnHeader colFeedId;
+		private System.Windows.Forms.ColumnHeader colTaskId;
 		private System.Windows.Forms.ColumnHeader colHost;
 		private System.Windows.Forms.Label lblDomain;
 		private System.Windows.Forms.Label lblServiceName;

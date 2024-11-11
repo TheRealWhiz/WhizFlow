@@ -45,7 +45,7 @@ namespace WhizFlowTestPlugins
 							lblActualItem.Text = n.ToString();
 						});
 					}
-					catch (Exception ex)
+					catch //(Exception ex)
 					{ }
 				}
 			});

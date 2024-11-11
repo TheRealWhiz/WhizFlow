@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net461;net471;net472;net48</TargetFrameworks>
+    <TargetFrameworks>net461;net471;net472;net48;net481</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Company>Whiz</Company>
     <Authors>Gabriele Vaccaro</Authors>
@@ -11,6 +11,23 @@
     <PackageTags></PackageTags>
     <Version>1.0.1</Version>
     <DocumentationFile>bin\$(TargetConfiguration)\$(TargetFrameworkVersion)\WF.TasksManagement.Objects.xml</DocumentationFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Title>WhizFlow TaskManagement objects package</Title>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
+  </ItemGroup>
 
 </Project>

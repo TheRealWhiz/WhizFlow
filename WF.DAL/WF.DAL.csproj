@@ -2,18 +2,39 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net461;net471;net472;net48</TargetFrameworks>
+    <TargetFrameworks>net461;net471;net472;net48;net481</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Company>Whiz</Company>
     <Authors>Gabriele Vaccaro</Authors>
-    <Description>WhizFlow DAL class</Description>
+    <Description>WhizFlow DAL and Log classes</Description>
     <Copyright>Whiz</Copyright>
     <PackageTags></PackageTags>
     <Version>1.0.1</Version>
     <DocumentationFile>bin\$(TargetConfiguration)\$(TargetFrameworkVersion)\WF.DAL.xml</DocumentationFile>
+    <Title>WhizFlow DAL and Log classes</Title>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WF.Common.Objects.WFTask\WF.Common.Objects.WFTask.csproj" />
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\WF.Monitoring\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WF.Common.Objects.WFTask" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
   </ItemGroup>
 </Project>

@@ -150,7 +150,7 @@ namespace Whiz.WhizFlow
 					}
 				}
 			}
-			catch (Exception ex)
+			catch //(Exception ex)
 			{
 				//sql azure support means no hard exit when sql is not available
 				//throw ex;

@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net461;net471;net472;net48</TargetFrameworks>
+		<TargetFrameworks>net461;net471;net472;net48;net481</TargetFrameworks>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Company>Whiz</Company>
 		<Authors>Gabriele Vaccaro</Authors>
@@ -11,7 +11,16 @@
 		<PackageTags></PackageTags>
 		<Version>1.0.1</Version>
 		<DocumentationFile>bin\$(TargetConfiguration)\$(TargetFrameworkVersion)\WF.Monitoring.xml</DocumentationFile>
+		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\LICENSE.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
 
 	<ItemGroup>
 	  <PackageReference Include="Whiz.Monitoring.Application.Common" Version="1.0.0" />
@@ -30,6 +39,13 @@
 	  <Compile Update="Workers.cs">
 	    <SubType>Form</SubType>
 	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	</ItemGroup>
 
 </Project>

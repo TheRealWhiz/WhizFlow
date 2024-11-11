@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net461;net471;net472;net48</TargetFrameworks>
+    <TargetFrameworks>net461;net471;net472;net48;net481</TargetFrameworks>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Company>Whiz</Company>
     <Authors>Gabriele Vaccaro</Authors>

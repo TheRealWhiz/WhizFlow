@@ -2,22 +2,36 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net461;net471;net472;net48</TargetFrameworks>
+    <TargetFrameworks>net461;net471;net472;net48;net481</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Company>Whiz</Company>
     <Authors>Gabriele Vaccaro</Authors>
-    <Description>WhizFlow Schedule Management classes</Description>
+    <Description>WhizFlow Worker Management classes</Description>
     <Copyright>Whiz</Copyright>
     <PackageTags></PackageTags>
     <Version>1.0.2</Version>
     <DocumentationFile>bin\$(TargetConfiguration)\$(TargetFrameworkVersion)\WF.ScheduleManagement.xml</DocumentationFile>
+    <Title>WhizFlow Worker Management classes</Title>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WF.DAL" Version="1.0.1" />
     <PackageReference Include="Whiz.Framework.Configuration" Version="1.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WF.DAL\WF.DAL.csproj" />
+    <None Include="README.md">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
   </ItemGroup>
 </Project>

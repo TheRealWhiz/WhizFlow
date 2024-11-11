@@ -14,13 +14,4 @@ BEGIN
 END
 
 GO
-GRANT VIEW DEFINITION
-    ON OBJECT::[dbo].[WF_Tasks_Remove] TO [WF_SPViewDefinition]
-    AS [dbo];
-
-
-GO
-GRANT EXECUTE
-    ON OBJECT::[dbo].[WF_Tasks_Remove] TO [WF_SPExecute]
-    AS [dbo];
 

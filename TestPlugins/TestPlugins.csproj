@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net48</TargetFrameworks>
+    <TargetFrameworks>net481</TargetFrameworks>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Company>Whiz</Company>
     <Authors>Gabriele Vaccaro</Authors>
@@ -13,16 +13,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="WF.DAL" Version="1.0.1" />
     <PackageReference Include="Whiz.Framework.Configuration" Version="1.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\WF.Common.Objects.WFTask\WF.Common.Objects.WFTask.csproj" />
-    <ProjectReference Include="..\WF.DAL\WF.DAL.csproj" />
-    <ProjectReference Include="..\WF.ScheduleManagement\WF.ScheduleManagement.csproj" />
-    <ProjectReference Include="..\WF.TasksManagement.Objects\WF.TasksManagement.Objects.csproj" />
-    <ProjectReference Include="..\WF.TasksManagement\WF.TasksManagement.csproj" />
-    <ProjectReference Include="..\WF.WorkerManagement\WF.WorkerManagement.csproj" />
   </ItemGroup>
 
   <ItemGroup>

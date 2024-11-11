@@ -21,10 +21,19 @@ namespace Whiz.WhizFlow.Monitoring
 		private String _domain;
 		private List<String> _schedulers;
 		private System.Timers.Timer _timer;
+		/// <summary>
+		/// Contructor
+		/// </summary>
 		public Schedulers()
 		{
 			InitializeComponent();
 		}
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="whizFlow"></param>
+		/// <param name="service"></param>
+		/// <param name="domain"></param>
 		public Schedulers(String whizFlow, String service, String domain)
 		{
 			InitializeComponent();

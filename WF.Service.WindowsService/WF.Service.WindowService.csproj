@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net48</TargetFrameworks>
+    <TargetFrameworks>net481</TargetFrameworks>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Company>Whiz</Company>
     <Authors>Gabriele Vaccaro</Authors>
@@ -15,13 +15,13 @@
     <StartupObject></StartupObject>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net48|AnyCPU'">
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net481|AnyCPU'">
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Whiz.Framework.Configuration" Version="1.0.1" />
-    <PackageReference Include="Whiz.Framework.Configuration.Xml" Version="1.0.1" />
+    <PackageReference Include="Whiz.Framework.Configuration.Xml" Version="1.0.2" />
   </ItemGroup>
 
   <ItemGroup>

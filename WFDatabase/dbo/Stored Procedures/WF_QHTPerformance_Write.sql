@@ -10,9 +10,9 @@ AS
 BEGIN
 	SET NOCOUNT ON;
 	insert into [dbo].[WF_QHTPerformances]
-		(fk_TaskContentId, Milliseconds, [Hostname], [Service], [Domain], [Signature], [TaskQueue], [TimeStamp])
+		(fk_TaskContentId, Milliseconds, [HostName], [Service], [Domain], [Signature], [TaskQueue], [TimeStamp])
 	values
-		(@TaskContentId, @Milliseconds, @Hostname, @Service, @Domain, @Signature, @TaskQueue, GETDATE())
+		(@TaskContentId, @Milliseconds, @HostName, @Service, @Domain, @Signature, @TaskQueue, GETDATE())
 END
 
 GO
